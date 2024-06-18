@@ -1,13 +1,13 @@
 version: '3.4'
 services:
   netbox:
-    image: netboxcommunity/netbox:v3.7.3
+    # image: netboxcommunity/netbox:v3.7.3
     ports:
       - "8000:8080"
   netbox-worker:
-    image: netboxcommunity/netbox:v3.7.3
+    # image: netboxcommunity/netbox:v3.7.3
   netbox-housekeeping:
-    image: netboxcommunity/netbox:v3.7.3
+    # image: netboxcommunity/netbox:v3.7.3
 
     # If you want the Nginx unit status page visible from the
     # outside of the container add the following port mapping:
