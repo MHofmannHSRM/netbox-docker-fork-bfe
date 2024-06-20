@@ -2,12 +2,24 @@ version: '3.4'
 services:
   netbox:
     # image: netboxcommunity/netbox:v3.7.3
+    image: netbox:latest-plugins
     ports:
-      - "8000:8080"
+      - 8000:8080
+    build:
+      context: .
+      dockerfile: Dockerfile-Plugins
   netbox-worker:
     # image: netboxcommunity/netbox:v3.7.3
+    image: netbox:latest-plugins
+    build:
+      context: .
+      dockerfile: Dockerfile-Plugins
   netbox-housekeeping:
     # image: netboxcommunity/netbox:v3.7.3
+    image: netbox:latest-plugins
+    build:
+      context: .
+      dockerfile: Dockerfile-Plugins
 
     # If you want the Nginx unit status page visible from the
     # outside of the container add the following port mapping:
