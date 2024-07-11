@@ -1,1 +1,1 @@
-netbox-multicast-stream-mapping
+netbox-multicast-stream-mapping==0.3
